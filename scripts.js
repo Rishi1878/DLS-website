@@ -5,11 +5,17 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Simple check for demo purposes
     if (username === 'ch21btech11030' && password === 'Rishi@2326') {
-        window.location.href = 'http://127.0.0.1:5500/page1.html';
+        document.getElementById('dialogBox').style.display = 'block';
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'https://github.com/Rishi1878/DLS';
+        });
     } 
     else if(username === 'ch21btech11009' && password === 'pass')
     {
-        window.location.href = 'http://127.0.0.1:5500/page1.html';
+        document.getElementById('dialogBox').style.display = 'block';
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'https://github.com/Rishi1878/DLS'; // Replace with the desired URL
+        });    
     }
     else {
         alert('Invalid credentials, please try again.');
